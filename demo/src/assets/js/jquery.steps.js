@@ -821,12 +821,13 @@ function refreshPagination(wizard, options, state)
 {
     if (options.enablePagination)
     {
-        var finish = wizard.find(".actions a[href$='#finish']").parent(),
-            next = wizard.find(".actions a[href$='#next']").parent();
-
+        var finish = wizard.find(".actions button[href$='#finish']").parent(),
+            next = wizard.find(".actions button[href$='#next']").parent();
+        console.log('finish-',finish)
+        console.log('next-',next)
         if (!options.forceMoveForward)
         {
-            var previous = wizard.find(".actions a[href$='#previous']").parent();
+            var previous = wizard.find(".actions button[href$='#previous']").parent();
             previous._enableAria(state.currentIndex > 0);
         }
 
@@ -1055,7 +1056,7 @@ function renderPagination(wizard, options, state)
     if (options.enablePagination)
     {
         var pagination = "<{0} class=\"actions {1}\"><ul role=\"menu\" aria-label=\"{2}\">{3}</ul></{0}>",
-            buttonTemplate = "<li><a href=\"#{0}\" role=\"menuitem\">{1}</a></li>",
+            buttonTemplate = "<li><button ngModel id='submitform' class='submitform' name='submitform'  value='{1}' href=\"#{0}\" role=\"menuitem\">{1}</button></li>",
             buttons = "";
 
         if (!options.forceMoveForward)

@@ -10,7 +10,7 @@ $(function(){
         labels: {
             previous : 'Back Step',
             next : 'Next Step',
-            finish : 'Submit',
+           // finish : 'Submit',
             current : ''
         },
     });

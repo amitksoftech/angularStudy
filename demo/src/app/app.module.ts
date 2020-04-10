@@ -10,8 +10,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { HttpClientModule } from '@angular/common/http';
-import {FormsModule}   from '@angular/forms';
+import {FormsModule, ReactiveFormsModule}   from '@angular/forms';
 import { RegisterationComponent } from './registeration/registeration.component';
+import { SimpleregisterationComponent } from './simpleregisteration/simpleregisteration.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,15 @@ import { RegisterationComponent } from './registeration/registeration.component'
     DashboardComponent,
     ContactusComponent,
     FeedbackComponent,
-    RegisterationComponent
+    RegisterationComponent,
+    SimpleregisterationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
   bootstrap: [AppComponent]

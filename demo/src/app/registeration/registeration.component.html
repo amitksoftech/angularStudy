@@ -2,10 +2,10 @@
     <div class="wizard-v4-content">
         <div class="wizard-form">
             <div class="wizard-header">
-                <h3 class="heading">Sign Up To Financial</h3>
+                <h3 class="heading">Sign Up Form</h3>
                 <p>Fill all form field to go next step</p>
             </div>
-            <form class="form-register" action="#" method="post">
+            <form class="form-register" #registerForm=ngForm action="#" method="post" (ngSubmit)="onSubmit(registerForm.value,$event)">
                 <div id="form-total">
                     <!-- SECTION 1 -->
                     <h2>
@@ -18,7 +18,7 @@
                             <div class="form-row">
                                 <div class="form-holder">
                                     <label class="form-row-inner">
-                                        <input type="text" class="form-control" id="first-name" name="first-name" required>
+                                        <input type="text" class="form-control" id="first-name" ngModel name="firstname" required>
                                         <span class="label">First Name</span>
                                           <span class="border"></span>
                                     </label>
@@ -217,7 +217,11 @@
                             </div>
                         </div>
                     </section>
+                    
                 </div>
+                <div>
+                        <button type="button">Register</button>
+                    </div>
             </form>
         </div>
     </div>

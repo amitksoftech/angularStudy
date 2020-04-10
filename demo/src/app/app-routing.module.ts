@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { RegisterationComponent } from './registeration/registeration.component';
+import { SimpleregisterationComponent } from './simpleregisteration/simpleregisteration.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,12 @@ const routes: Routes = [
 
     path: "registeration",
     component: RegisterationComponent
+
+  },
+  {
+
+    path: "simpleregisteration",
+    component: SimpleregisterationComponent
 
   },
   {

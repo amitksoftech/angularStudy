@@ -12,4 +12,10 @@ export class RegisterationComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit(data, event) {
+    var id = document.getElementById('submitform');
+    debugger;
+    console.log('form data', data,id);
+  }
+
 }

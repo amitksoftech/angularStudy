@@ -1,0 +1,42 @@
+<h2>This is header</h2>
+<hr>
+<p>case1</p>
+
+<input type="radio" name="radio1" (click)="changevaluecase1(true)">True
+<input type="radio" name="radio1" (click)="changevaluecase1(False)">False
+
+<div *ngIf="isvalidcase1; else elseblockcase1">
+    this is true div case1.
+</div>
+
+
+<div *ngIf="!isvalidcase1">
+    this is false div case1.
+</div>
+
+<ng-template #elseblockcase1>
+    <div>
+        this is else block case1
+    </div>
+</ng-template>
+
+
+<hr>
+<p>case2</p>
+
+<input type="radio" name="radio2" (click)="changevaluecase2(true)">True
+<input type="radio" name="radio2" (click)="changevaluecase2(false)">False
+
+<div *ngIf="isvalidcase2; then thenblockcase2;else elseblockcase2">
+    <ng-template #thenblockcase2>
+        <div>
+            this is true div of then block.
+        </div>
+    </ng-template>
+</div>
+
+<ng-template #elseblockcase2>
+    <div>
+        this is else block case2
+    </div>
+</ng-template>

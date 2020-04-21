@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule}   from '@angular/forms';
 import { RegisterationComponent } from './registeration/registeration.component';
 import { SimpleregisterationComponent } from './simpleregisteration/simpleregisteration.component';
+import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { Dashboard1Component } from './dashboard1/dashboard1.component';
+import { IfelseComponent } from './ifelse/ifelse.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { SimpleregisterationComponent } from './simpleregisteration/simpleregist
     ContactusComponent,
     FeedbackComponent,
     RegisterationComponent,
-    SimpleregisterationComponent
+    SimpleregisterationComponent,
+    TwowaybindingComponent,
+    Dashboard1Component,
+    IfelseComponent
   ],
   imports: [
     BrowserModule,

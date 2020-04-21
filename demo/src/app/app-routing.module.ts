@@ -6,6 +6,9 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { RegisterationComponent } from './registeration/registeration.component';
 import { SimpleregisterationComponent } from './simpleregisteration/simpleregisteration.component';
+import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { Dashboard1Component } from './dashboard1/dashboard1.component';
+import { IfelseComponent } from './ifelse/ifelse.component';
 
 
 const routes: Routes = [
@@ -31,6 +34,24 @@ const routes: Routes = [
 
     path: "simpleregisteration",
     component: SimpleregisterationComponent
+
+  },
+  {
+
+    path: "twowaybinding",
+    component: TwowaybindingComponent
+
+  },
+  {
+
+    path: "dashboard1",
+    component: Dashboard1Component
+
+  },
+  {
+
+    path: "ifelse",
+    component: IfelseComponent
 
   },
   {

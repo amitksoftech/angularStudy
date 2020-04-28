@@ -9,6 +9,8 @@ import { SimpleregisterationComponent } from './simpleregisteration/simpleregist
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import { Dashboard1Component } from './dashboard1/dashboard1.component';
 import { IfelseComponent } from './ifelse/ifelse.component';
+import { PipesexampleComponent } from './pipesexample/pipesexample.component';
+import { ViewuserdetailsmodelComponent } from './viewuserdetailsmodel/viewuserdetailsmodel.component';
 
 
 const routes: Routes = [
@@ -22,6 +24,12 @@ const routes: Routes = [
 
     path: "login",
     component: LoginComponent
+
+  }, 
+   {
+
+    path: "viewuserdetails",
+    component: ViewuserdetailsmodelComponent
 
   },
   {
@@ -54,6 +62,14 @@ const routes: Routes = [
     component: IfelseComponent
 
   },
+  
+  {
+
+    path: "pipesexample",
+    component: PipesexampleComponent
+
+  },
+
   {
     path: "contactus",
     

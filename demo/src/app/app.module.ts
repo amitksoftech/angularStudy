@@ -16,6 +16,10 @@ import { SimpleregisterationComponent } from './simpleregisteration/simpleregist
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import { Dashboard1Component } from './dashboard1/dashboard1.component';
 import { IfelseComponent } from './ifelse/ifelse.component';
+import { PipesexampleComponent } from './pipesexample/pipesexample.component';
+import { DataService } from './services/data.service';
+import { ViewuserdetailsmodelComponent } from './viewuserdetailsmodel/viewuserdetailsmodel.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import { IfelseComponent } from './ifelse/ifelse.component';
     SimpleregisterationComponent,
     TwowaybindingComponent,
     Dashboard1Component,
-    IfelseComponent
+    IfelseComponent,
+    PipesexampleComponent,
+    ViewuserdetailsmodelComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,7 @@ import { IfelseComponent } from './ifelse/ifelse.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [{provide: APP_BASE_HREF, useValue : '/' },DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

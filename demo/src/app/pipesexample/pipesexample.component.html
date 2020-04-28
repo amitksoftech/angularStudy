@@ -1,0 +1,31 @@
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+        <th>NAME uppercase</th>
+        <th>NAME titlecase</th>
+        <th>NAME slice</th>
+        <th>SALARY</th>
+        <th>DOB short</th>
+        <th>DOB medium</th>
+        <th>DOB specific format</th>
+    </tr>
+
+    <tr *ngFor="let employee of employees">
+        <td>{{employee.empid}}</td>
+        <td>{{employee.name | uppercase}}</td>
+        <td>{{employee.name | titlecase}}</td>
+        <td>{{employee.name | slice:2:5}}</td>
+        <td>{{employee.salary}}</td>
+        <td>{{employee.dob | date:"short"}}</td>
+        <td>{{employee.dob | date:"medium"}}</td>
+        <td>{{employee.dob | date:"dd/MM/yyyy"}}</td>
+
+
+    </tr>
+
+
+
+
+
+</table>
